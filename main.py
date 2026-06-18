@@ -25,3 +25,23 @@ while True:
         patient_list.append(new_patient)
 
         print("Patient successfully registered!")
+
+    elif user_choice == "2":
+
+        full_name = input("Doctor Name: ")
+        age = int(input("Age: "))
+        specialization = input("Specialization: ")
+
+        new_doctor = Doctor(full_name, age, specialization)
+        doctor_list.append(new_doctor)
+
+        print("Doctor successfully registered!")
+
+    elif user_choice == "3":
+
+        if len(patient_list) == 0:
+            print("No patients found.")
+        else:
+            for patient in patient_list:
+                patient.display_information()
+
