@@ -45,3 +45,17 @@ while True:
             for patient in patient_list:
                 patient.display_information()
 
+    elif user_choice == "4":
+
+        if len(doctor_list) == 0:
+            print("No doctors found.")
+        else:
+            for doctor in doctor_list:
+                doctor.display_information()
+
+    elif user_choice == "5":
+        print("Exiting system... Goodbye!")
+        break
+
+    else:
+        print("Invalid choice!")
